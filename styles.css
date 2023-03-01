@@ -1,0 +1,167 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto;
+}
+
+body{
+    background-image: linear-gradient(90deg,#282828,#202020);
+}
+
+.pic{
+   width: 45px;
+   height: 40px;
+   color  :  #fff;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 12px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+.brand img{
+    padding: 8px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    height: 80px;
+    color: #fff;
+    border-radius: 2px ; 
+    font-weight:light;
+}
+
+/* play control styles */
+
+.container{
+    min-height: 75vh;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    margin: 25px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 30px;
+    background-image: url('images/background-images-2.avif');
+    background-size: 100%;
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: #000000;
+    color:#fff;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.icons i{
+    margin: 5 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 70px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+    color : #000;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0  10px;
+}
+
+.songItem img{
+    width: 40px;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+.songInfo{  
+   position: absolute;
+   left:10vw;
+}
+
+.songInfo span{
+     padding: 10px;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.timeStamp{
+    margin: 0 10px;
+}
+
+span i{
+    cursor: pointer;
+}
+
+@media(max-width:480px){
+    .icons{  
+          height: 100px;
+          align-items: flex-end;
+     }
+     .songInfo span{
+        line-height: 10px;
+        text-align: center;
+        padding: 0 10px;
+        font-size: 15px;
+     }
+     #myProgressBar{
+        padding: 20px 0;
+     }
+     .container{
+        border: 2px solid #fdde6f;
+        width: 75%;
+     }
+     span{
+        font-size: 11px;
+     }
+     .songItemContainer{
+        width: 100%;
+     }
+     .songInfo{
+        margin-bottom: 20px;
+     }
+     
+}
